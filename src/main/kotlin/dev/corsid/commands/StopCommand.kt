@@ -3,18 +3,13 @@ package dev.corsid.commands
 import com.hypixel.hytale.server.core.Message
 import com.hypixel.hytale.server.core.command.system.AbstractCommand
 import com.hypixel.hytale.server.core.command.system.CommandContext
+import dev.corsid.events.ChunkLoader
 import java.util.concurrent.CompletableFuture
 
-class RootCommand : AbstractCommand("chunkloader", "Configure ChunkLoader plugin") {
-    init {
-        this.addAliases("cl")
-        this.addSubCommand(IsLoadedCommand())
-        this.addSubCommand(StartCommand())
-        this.addSubCommand(StopCommand())
-    }
-
+class StopCommand : AbstractCommand("stop", "Stop loading the chunk") {
     override fun execute(context: CommandContext): CompletableFuture<Void> {
-        context.sendMessage(Message.raw("ChunkLoader is working"))
+        ChunkLoader.stop()
+        context.sendMessage(Message.raw("stopped loading the chunk"))
         return CompletableFuture.completedFuture(null)
     }
 }

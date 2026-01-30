@@ -1,6 +1,6 @@
 {
   "Group": "corsid",
-  "Name": "Chunk Loader",
+  "Name": "ChunkLoader",
   "Version": "1.0.0",
   "Description": "Keep chunks loaded even when you're far away",
   "Authors": [
@@ -11,7 +11,7 @@
     }
   ],
   "Website": "https://github.com/corsid/hytale-chunkloader-plugin",
-  "Main": "dev.corsid.ChunkLoader",
+  "Main": "dev.corsid.Plugin",
   "ServerVersion": "*",
   "Dependencies": {},
   "OptionalDependencies": {},
