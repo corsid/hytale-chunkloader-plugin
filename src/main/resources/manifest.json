@@ -1,0 +1,20 @@
+{
+  "Group": "corsid",
+  "Name": "Plugin",
+  "Version": "1.0.0",
+  "Description": "",
+  "Authors": [
+    {
+      "Name": "corsid",
+      "Email": "corsidd@proton.me",
+      "Url": "https://corsid.site"
+    }
+  ],
+  "Website": "https://github.com/corsid/hytale-template-plugin",
+  "Main": "dev.corsid.Plugin",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true
+}
